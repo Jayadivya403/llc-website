@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% from "icons.html" import icon_award %}
+
+{% block title %}About — Divya Boddu{% endblock %}
+{% block description %}Learn about Divya Boddu, founder of MEDHAITSOLUTIONS LLC — Salesforce and MuleSoft specialist.{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label">About Me</span>
+        <h1>The person behind<br><span class="text-gradient">MEDHAITSOLUTIONS</span></h1>
+        <p class="hero-subtitle">Salesforce &amp; MuleSoft specialist committed to delivering exceptional results.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-content fade-in">
+                <h2>My Journey</h2>
+                <p>
+                    I'm Divya Boddu, founder of MEDHAITSOLUTIONS LLC. I specialize in
+                    Salesforce and MuleSoft — the platforms at the heart of modern enterprise.
+                    I believe every organization deserves access to expert-level development
+                    and testing, delivered with care and precision.
+                </p>
+                <p>
+                    With deep experience across the Salesforce ecosystem (Apex, LWC, Sales Cloud,
+                    Service Cloud) and MuleSoft's Anypoint Platform (API design, Mule 4, DataWeave,
+                    CloudHub), I bring a full-stack integration perspective to every engagement.
+                </p>
+                <p>
+                    As a single member LLC, you work directly with me — that means faster
+                    communication, deeper expertise, and a genuine investment in your success.
+                </p>
+            </div>
+            <div class="about-values fade-in">
+                <h2>My Values</h2>
+                <div class="values-list">
+                    <div class="value-item">
+                        <div class="value-marker"></div>
+                        <div>
+                            <h4>Integrity</h4>
+                            <p>I do what I say and say what I do. Transparency is at my core.</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-marker"></div>
+                        <div>
+                            <h4>Excellence</h4>
+                            <p>Good enough isn't good enough. I aim higher on every project.</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-marker"></div>
+                        <div>
+                            <h4>Partnership</h4>
+                            <p>Your success is my success. I treat every client like a partner.</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-marker"></div>
+                        <div>
+                            <h4>Continuous Learning</h4>
+                            <p>Technology evolves fast. I stay current so you stay ahead.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section certs-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-label">Credentials</span>
+            <h2>Certifications &amp; Expertise</h2>
+            <p>Industry-recognized certifications across the Salesforce and MuleSoft ecosystems.</p>
+        </div>
+        <div class="certs-grid">
+            <div class="cert-card fade-in fade-in-delay-1">
+                <div class="cert-icon">{{ icon_award(28) }}</div>
+                <h4>Salesforce Certified Platform Developer</h4>
+            </div>
+            <div class="cert-card fade-in fade-in-delay-2">
+                <div class="cert-icon">{{ icon_award(28) }}</div>
+                <h4>Salesforce Certified Administrator</h4>
+            </div>
+            <div class="cert-card fade-in fade-in-delay-3">
+                <div class="cert-icon">{{ icon_award(28) }}</div>
+                <h4>MuleSoft Certified Developer</h4>
+            </div>
+            <div class="cert-card fade-in fade-in-delay-4">
+                <div class="cert-icon">{{ icon_award(28) }}</div>
+                <h4>MuleSoft Certified Integration Architect</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section cta-section">
+    <div class="container">
+        <div class="cta-card fade-in">
+            <h2>Want to Work Together?</h2>
+            <p>I'd love to hear about your project and how I can help.</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary">Let's Talk</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

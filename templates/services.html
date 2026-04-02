@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block title %}Services — Divya Boddu{% endblock %}
+{% block description %}Salesforce development, MuleSoft integration, and comprehensive QA testing by Divya Boddu at MEDHAITSOLUTIONS LLC.{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label">What I Do</span>
+        <h1>Salesforce &amp; MuleSoft<br><span class="text-gradient">services you can trust</span></h1>
+        <p class="hero-subtitle">End-to-end development, integration, and quality assurance for the platforms that power your business.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <div class="service-number">01</div>
+                <h3>Salesforce Development</h3>
+                <p>
+                    Custom Salesforce solutions built to streamline your sales, service,
+                    and operations — from configuration to complex Apex and LWC development.
+                </p>
+                <ul class="service-features">
+                    <li>Apex, Triggers &amp; Lightning Web Components</li>
+                    <li>Sales Cloud, Service Cloud &amp; Experience Cloud</li>
+                    <li>Custom objects, flows &amp; process automation</li>
+                    <li>Third-party app integrations</li>
+                </ul>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-number">02</div>
+                <h3>Salesforce Testing &amp; QA</h3>
+                <p>
+                    Rigorous quality assurance to ensure your Salesforce org runs
+                    flawlessly — from unit tests to full regression suites.
+                </p>
+                <ul class="service-features">
+                    <li>Functional &amp; regression testing</li>
+                    <li>Apex unit &amp; integration test coverage</li>
+                    <li>Data migration validation</li>
+                    <li>UAT planning &amp; execution</li>
+                </ul>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-number">03</div>
+                <h3>MuleSoft Development</h3>
+                <p>
+                    API-led connectivity that brings your systems together — designed,
+                    built, and deployed on the Anypoint Platform.
+                </p>
+                <ul class="service-features">
+                    <li>API design with RAML &amp; OAS</li>
+                    <li>Mule 4 flows &amp; DataWeave transformations</li>
+                    <li>System, process &amp; experience API layers</li>
+                    <li>CloudHub &amp; on-prem deployment</li>
+                </ul>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-number">04</div>
+                <h3>MuleSoft Testing &amp; QA</h3>
+                <p>
+                    Comprehensive testing of your integrations to guarantee reliable
+                    data flow and rock-solid API performance.
+                </p>
+                <ul class="service-features">
+                    <li>MUnit automated test suites</li>
+                    <li>API functional &amp; contract testing</li>
+                    <li>Load &amp; performance testing</li>
+                    <li>Error handling &amp; retry validation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section process-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-label">How I Work</span>
+            <h2>Simple, Transparent Process</h2>
+        </div>
+        <div class="process-grid">
+            <div class="process-step fade-in fade-in-delay-1">
+                <div class="process-number">1</div>
+                <h4>Discovery</h4>
+                <p>I listen to your needs and understand your goals.</p>
+            </div>
+            <div class="process-connector"></div>
+            <div class="process-step fade-in fade-in-delay-2">
+                <div class="process-number">2</div>
+                <h4>Proposal</h4>
+                <p>I craft a clear plan with scope, timeline, and pricing.</p>
+            </div>
+            <div class="process-connector"></div>
+            <div class="process-step fade-in fade-in-delay-3">
+                <div class="process-number">3</div>
+                <h4>Execution</h4>
+                <p>I deliver the work with regular updates along the way.</p>
+            </div>
+            <div class="process-connector"></div>
+            <div class="process-step fade-in fade-in-delay-4">
+                <div class="process-number">4</div>
+                <h4>Support</h4>
+                <p>I stay available for follow-up and ongoing assistance.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section cta-section">
+    <div class="container">
+        <div class="cta-card fade-in">
+            <h2>Need a Custom Solution?</h2>
+            <p>Every business is different. Let's find the right fit for yours.</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary">Request a Quote</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

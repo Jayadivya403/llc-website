@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Page Not Found — MEDHAITSOLUTIONS{% endblock %}
+
+{% block content %}
+<section class="page-hero error-hero">
+    <div class="container" style="text-align:center;">
+        <div class="error-code">404</div>
+        <h1>Page not found</h1>
+        <p class="hero-subtitle" style="margin: 0 auto 32px;">The page you're looking for doesn't exist or has been moved.</p>
+        <div class="hero-actions" style="justify-content:center;">
+            <a href="{{ url_for('home') }}" class="btn btn-primary">Back to Home</a>
+            <a href="{{ url_for('contact') }}" class="btn btn-outline">Contact Me</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

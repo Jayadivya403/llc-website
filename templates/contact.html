@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% from "icons.html" import icon_mail, icon_map_pin, icon_linkedin %}
+
+{% block title %}Contact — Divya Boddu{% endblock %}
+{% block description %}Get in touch with Divya Boddu at MEDHAITSOLUTIONS LLC. Let's discuss your project.{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label">Let's Connect</span>
+        <h1>Start a<br><span class="text-gradient">conversation</span></h1>
+        <p class="hero-subtitle">Whether you want to discuss Salesforce, MuleSoft, or a new project — I'd love to hear from you.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info fade-in">
+                <h2>Get In Touch</h2>
+                <p>I'm always interested in new projects and connecting with fellow professionals in the Salesforce and MuleSoft community.</p>
+
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-method-icon">{{ icon_mail(20) }}</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>divya.boddu@medhaitsolutions.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-method-icon">{{ icon_linkedin(20) }}</div>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://www.linkedin.com/in/divya-sindhu-boddu" target="_blank" rel="noopener noreferrer" class="contact-link">Connect professionally</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-method-icon">{{ icon_map_pin(20) }}</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>United States</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form fade-in" method="POST" action="{{ url_for('contact') }}">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required
+                           placeholder="Your name" maxlength="200">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required
+                           placeholder="your@email.com" maxlength="254">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="6" required
+                              placeholder="Tell me about your project..." maxlength="5000"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                <p class="form-hint">I typically respond within 24 hours.</p>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

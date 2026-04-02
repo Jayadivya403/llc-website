@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% from "icons.html" import icon_cloud, icon_link, icon_shield_check, icon_code, icon_zap, icon_check_circle %}
+
+{% block title %}Divya Boddu — Salesforce &amp; MuleSoft Expert{% endblock %}
+{% block description %}Divya Boddu — Salesforce and MuleSoft development, integration, and testing. Founder of MEDHAITSOLUTIONS LLC.{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-label fade-in">
+                <span class="dot"></span> Available for new projects
+            </div>
+            <h1 class="fade-in fade-in-delay-1">Hi, I'm <span class="text-gradient">Divya Boddu</span></h1>
+            <p class="hero-subtitle fade-in fade-in-delay-2">
+                Salesforce &amp; MuleSoft specialist with deep expertise in development,
+                integration architecture, and quality assurance. Building solutions that
+                connect systems and drive business forward.
+            </p>
+            <div class="hero-tags fade-in fade-in-delay-3">
+                <span class="hero-tag">Salesforce Developer</span>
+                <span class="hero-tag">MuleSoft Architect</span>
+                <span class="hero-tag">Integration Specialist</span>
+                <span class="hero-tag">QA Expert</span>
+            </div>
+            <div class="hero-actions fade-in fade-in-delay-4">
+                <a href="{{ url_for('services') }}" class="btn btn-primary">View My Work</a>
+                <a href="{{ url_for('contact') }}" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section skills-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-label">Expertise</span>
+            <h2>What I Bring to the Table</h2>
+            <p>Specialized skills across the Salesforce and MuleSoft ecosystems.</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card fade-in fade-in-delay-1">
+                <div class="skill-card-icon">{{ icon_cloud(28) }}</div>
+                <h3>Salesforce</h3>
+                <ul>
+                    <li>Apex &amp; LWC Development</li>
+                    <li>Sales &amp; Service Cloud</li>
+                    <li>Flows &amp; Automation</li>
+                    <li>Custom Applications</li>
+                </ul>
+            </div>
+            <div class="skill-card fade-in fade-in-delay-2">
+                <div class="skill-card-icon">{{ icon_link(28) }}</div>
+                <h3>Integration</h3>
+                <ul>
+                    <li>MuleSoft Anypoint</li>
+                    <li>API-Led Connectivity</li>
+                    <li>DataWeave &amp; RAML</li>
+                    <li>System Architecture</li>
+                </ul>
+            </div>
+            <div class="skill-card fade-in fade-in-delay-3">
+                <div class="skill-card-icon">{{ icon_code(28) }}</div>
+                <h3>Development</h3>
+                <ul>
+                    <li>Mule 4 Flows</li>
+                    <li>REST &amp; SOAP APIs</li>
+                    <li>CloudHub Deployment</li>
+                    <li>CI/CD Pipelines</li>
+                </ul>
+            </div>
+            <div class="skill-card fade-in fade-in-delay-4">
+                <div class="skill-card-icon">{{ icon_shield_check(28) }}</div>
+                <h3>Quality Assurance</h3>
+                <ul>
+                    <li>Functional Testing</li>
+                    <li>MUnit &amp; Apex Tests</li>
+                    <li>Regression Suites</li>
+                    <li>Performance Testing</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section features">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-label">Why Work With Me</span>
+            <h2>Built on Trust, Driven by Results</h2>
+            <p>Direct engagement with a dedicated professional who cares about your success.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card fade-in fade-in-delay-1">
+                <div class="feature-icon">{{ icon_zap(28) }}</div>
+                <h3>Deep Expertise</h3>
+                <p>Hands-on experience across the full Salesforce and MuleSoft stack — from architecture to deployment.</p>
+            </div>
+            <div class="feature-card fade-in fade-in-delay-2">
+                <div class="feature-icon">{{ icon_check_circle(28) }}</div>
+                <h3>Quality First</h3>
+                <p>Every project includes thorough testing and validation. Nothing ships without confidence.</p>
+            </div>
+            <div class="feature-card fade-in fade-in-delay-3">
+                <div class="feature-icon">{{ icon_cloud(28) }}</div>
+                <h3>Direct Communication</h3>
+                <p>You work directly with me — no layers, no handoffs. Faster decisions, better outcomes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section cta-section">
+    <div class="container">
+        <div class="cta-card fade-in">
+            <h2>Let's Build Something Great</h2>
+            <p>Whether you need Salesforce development, MuleSoft integration, or quality assurance — I'm ready to help.</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary">Start a Conversation</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
